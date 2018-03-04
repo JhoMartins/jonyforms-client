@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
- 
+
 import { AppComponent } from './app.component';
 import { MaterializeModule } from 'ng2-materialize';
 import { ColorPickerModule } from 'ngx-color-picker';
@@ -10,8 +10,10 @@ import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from './forms/forms.module';
 import { AnswersModule } from './answers/answers.module';
- 
- 
+import { RouterModule } from '@angular/router';
+import { routing } from './app.routing';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,9 @@ import { AnswersModule } from './answers/answers.module';
     ColorPickerModule,
     ChartsModule,
     FormsModule,
-    AnswersModule
+    AnswersModule,
+    RouterModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
